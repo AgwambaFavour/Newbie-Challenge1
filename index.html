@@ -51,6 +51,10 @@
         max-width: 280px;
         border-radius: 15px;
       }
+      .img-field{
+        max-width: 280px;
+        border-radius: 15px;
+      }
       .qr-text {
         max-width: 280px;
       }
@@ -66,6 +70,27 @@
         text-align: center;
         color: hsl(220, 15%, 55%);
       }
+      .input-field {
+        width: 250px;
+        border-radius: 15px;
+        padding: 10px;
+      }
+      .btn {
+        margin: 10px;
+        padding: 10px 20px;
+        font-size: 15px;
+        font-weight: bold;
+        border-radius: 10px;
+        background-color: #0d41e1;
+        color: white;
+        border: none;
+        transition: ease-in 0.8s all;
+      }
+
+      .btn:hover {
+        background-color: rgb(0, 0, 124);
+        font-weight: bolder;
+      }
     </style>
   </head>
   <body>
@@ -76,7 +101,10 @@
       >. Coded by <a href="https://github.com/AgwambaFavour">Favour Agwamba</a>.
     </div>
     <section class="container">
-      <img class="img" src="./images/image-qr-code.png" alt="QR-code" />
+      <div class="img-field">
+        <img class="img" src="./images/image-qr-code.png" alt="QR-code" />
+      </div>
+      
       <div class="qr-text">
         <h1>Improve your front-end skills by building projects</h1>
         <p>
@@ -84,6 +112,9 @@
           skills to the next level
         </p>
       </div>
+      <input type="text" placeholder="Enter value Here" class="input-field" />
+      <button class="btn">Generate Qr-code</button>
     </section>
   </body>
+  <script src="index.js"></script>
 </html>
